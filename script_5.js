@@ -64,7 +64,7 @@ console.log("**********Le nombre de crypto contenant le mot coin")
 var number_coin = 0
 
 for(var index in devises){
-	if(devises[index].includes("coin")){
+	if(devises[index].match(/coin/i)) {
 		number_coin+=1
 	}
 }
